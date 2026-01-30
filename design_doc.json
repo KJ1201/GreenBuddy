@@ -1,0 +1,453 @@
+{
+  "design_system_profile": {
+    "metadata": {
+      "name": "Modern Wellness Product Design System",
+      "version": "1.0",
+      "category": "E-commerce / Health & Wellness",
+      "description": "Clean, organic-focused design system with pastel accents and natural imagery"
+    },
+    
+    "color_palette": {
+      "primary": {
+        "background": "#FFFFFF",
+        "text_primary": "#000000",
+        "text_secondary": "#2C2C2C"
+      },
+      "accent_colors": {
+        "pastel_blue": "#D4E8E8",
+        "pastel_coral": "#F4BDB0",
+        "pastel_yellow": "#F9F1A5",
+        "pastel_pink": "#F5D5D5",
+        "light_peach": "#FFE8DD"
+      },
+      "semantic": {
+        "info": "pastel_blue",
+        "highlight": "pastel_coral",
+        "warning": "pastel_yellow",
+        "calm": "pastel_pink"
+      }
+    },
+    
+    "typography": {
+      "font_families": {
+        "primary": "Sans-serif (Clean, modern)",
+        "characteristics": "Geometric, rounded, friendly"
+      },
+      "hierarchy": {
+        "hero_heading": {
+          "size": "72-96px",
+          "weight": "700-900",
+          "line_height": "1.1",
+          "case": "sentence",
+          "color": "text_primary"
+        },
+        "section_heading": {
+          "size": "32-48px",
+          "weight": "600-700",
+          "line_height": "1.2",
+          "case": "sentence"
+        },
+        "body_text": {
+          "size": "16-18px",
+          "weight": "400-500",
+          "line_height": "1.6"
+        },
+        "button_text": {
+          "size": "14-16px",
+          "weight": "500-600",
+          "case": "sentence",
+          "letter_spacing": "0.02em"
+        },
+        "label_text": {
+          "size": "14-16px",
+          "weight": "400-500",
+          "line_height": "1.4"
+        }
+      }
+    },
+    
+    "layout_structure": {
+      "grid": {
+        "type": "12-column flexible grid",
+        "max_width": "1400px",
+        "gutter": "24-32px",
+        "margin": "40-80px"
+      },
+      "spacing_scale": {
+        "xs": "8px",
+        "sm": "16px",
+        "md": "24px",
+        "lg": "32px",
+        "xl": "48px",
+        "2xl": "64px",
+        "3xl": "96px",
+        "4xl": "128px"
+      },
+      "breakpoints": {
+        "mobile": "320px-767px",
+        "tablet": "768px-1023px",
+        "desktop": "1024px+"
+      }
+    },
+    
+    "components": {
+      "navigation": {
+        "type": "horizontal_top_bar",
+        "structure": {
+          "layout": "flex_horizontal",
+          "alignment": "space-between",
+          "padding": "20-24px 40-60px",
+          "background": "white",
+          "position": "sticky_top"
+        },
+        "logo": {
+          "position": "left",
+          "type": "icon_text_combination",
+          "icon_style": "simple geometric shape (star/sunburst)",
+          "icon_color": "black",
+          "text_weight": "bold",
+          "text_transform": "uppercase"
+        },
+        "menu_items": {
+          "layout": "horizontal_list",
+          "spacing": "24-40px",
+          "alignment": "center",
+          "style": "pill_shaped_for_active",
+          "active_state": {
+            "background": "white",
+            "border": "1-2px solid black",
+            "border_radius": "24px",
+            "padding": "8px 20px"
+          },
+          "hover_state": {
+            "opacity": "0.7",
+            "transition": "0.2s ease"
+          }
+        },
+        "cta_button": {
+          "position": "right",
+          "style": "icon_only_circle",
+          "icon": "shopping_bag",
+          "background": "white",
+          "border": "1-2px solid black",
+          "border_radius": "50%",
+          "size": "40-48px"
+        }
+      },
+      
+      "hero_section": {
+        "layout": "two_column_asymmetric",
+        "background": "white or subtle off-white",
+        "padding": "60-100px 40-80px",
+        "columns": {
+          "left": {
+            "width": "50-55%",
+            "content_type": "text_content",
+            "vertical_alignment": "center"
+          },
+          "right": {
+            "width": "45-50%",
+            "content_type": "image",
+            "vertical_alignment": "center"
+          }
+        },
+        "heading": {
+          "size": "extra_large",
+          "max_width": "600px",
+          "margin_bottom": "40-60px"
+        }
+      },
+      
+      "benefit_tags": {
+        "type": "floating_pill_clusters",
+        "structure": {
+          "layout": "scattered_organic_placement",
+          "distribution": "non-grid, natural flow"
+        },
+        "tag_variants": [
+          {
+            "type": "oval_horizontal",
+            "padding": "16px 32px",
+            "border_radius": "40px",
+            "border": "2px solid black",
+            "background": "pastel_color",
+            "text_alignment": "center"
+          },
+          {
+            "type": "rectangle_soft",
+            "padding": "16px 28px",
+            "border_radius": "8px",
+            "border": "2px solid black",
+            "background": "pastel_color",
+            "text_alignment": "center"
+          }
+        ],
+        "color_assignment": {
+          "method": "varied_pastels",
+          "rule": "each tag gets different pastel background"
+        },
+        "positioning": {
+          "overlap": "slight overlap allowed",
+          "rotation": "0deg (keep horizontal)",
+          "spacing": "organic, varied gaps"
+        }
+      },
+      
+      "feature_cards": {
+        "type": "horizontal_icon_text_cards",
+        "layout": "flex_row_wrap",
+        "background": "light_peach or pastel",
+        "padding": "40-60px",
+        "spacing_between": "40-80px",
+        "card_structure": {
+          "layout": "horizontal",
+          "alignment": "center",
+          "gap": "16-24px"
+        },
+        "icon": {
+          "type": "circular_background",
+          "size": "60-80px",
+          "background": "pastel_coral",
+          "border_radius": "50%",
+          "icon_style": "simple line icons",
+          "icon_color": "black",
+          "padding": "16-20px"
+        },
+        "text": {
+          "weight": "500-600",
+          "size": "18-22px",
+          "color": "black",
+          "max_width": "200px"
+        }
+      },
+      
+      "image_containers": {
+        "type": "organic_rounded_rectangles",
+        "border_radius": "16-24px",
+        "aspect_ratio": "4:5 or custom",
+        "object_fit": "cover",
+        "decorative_elements": {
+          "type": "simple_graphic_overlays",
+          "examples": "daisy flower, simple shapes",
+          "position": "bottom_right or corners",
+          "style": "flat, illustrative, white or solid color"
+        },
+        "image_treatment": {
+          "filter": "none or slight warmth",
+          "brightness": "natural to slightly bright",
+          "vibe": "lifestyle, energetic, natural settings"
+        }
+      },
+      
+      "buttons": {
+        "primary": {
+          "background": "black",
+          "color": "white",
+          "border": "none",
+          "border_radius": "24-32px",
+          "padding": "12-16px 32-48px",
+          "font_weight": "500-600",
+          "hover": {
+            "background": "#2C2C2C",
+            "transform": "scale(1.02)",
+            "transition": "0.2s ease"
+          }
+        },
+        "secondary": {
+          "background": "white",
+          "color": "black",
+          "border": "2px solid black",
+          "border_radius": "24-32px",
+          "padding": "12-16px 32-48px",
+          "font_weight": "500-600",
+          "hover": {
+            "background": "#F5F5F5",
+            "transition": "0.2s ease"
+          }
+        },
+        "icon_button": {
+          "background": "white or pastel",
+          "border": "2px solid black",
+          "border_radius": "50%",
+          "size": "40-56px",
+          "icon_size": "20-24px",
+          "hover": {
+            "background": "pastel_color",
+            "transition": "0.2s ease"
+          }
+        }
+      }
+    },
+    
+    "design_principles": {
+      "visual_style": {
+        "aesthetic": "Modern organic wellness",
+        "mood": "Calm, friendly, approachable, natural",
+        "influences": "Scandinavian minimalism meets pastel organic"
+      },
+      "key_characteristics": [
+        "High contrast text (black on white)",
+        "Soft pastel accent colors for highlights and backgrounds",
+        "Rounded corners throughout (pills, cards, images)",
+        "Generous whitespace",
+        "Organic, non-grid layouts for decorative elements",
+        "Clean sans-serif typography",
+        "Simple line icons",
+        "Natural lifestyle photography",
+        "Minimal decorative illustrations (simple shapes, flowers)"
+      ],
+      "interaction_patterns": {
+        "hover_effects": "Subtle opacity changes, slight scale, background color shifts",
+        "transitions": "0.2-0.3s ease for all interactions",
+        "focus_states": "2px outline offset by 2px",
+        "active_states": "Slightly darker or filled versions of hover states"
+      }
+    },
+    
+    "content_structure": {
+      "hero_pattern": {
+        "headline": "Question-based or benefit-focused",
+        "headline_style": "Large, bold, sentence case",
+        "subheadline": "Benefit tags or pills scattered organically",
+        "cta": "Minimal or none in hero",
+        "visual": "Lifestyle image showing product use or lifestyle benefit"
+      },
+      "feature_section": {
+        "layout": "Horizontal scrolling or grid",
+        "background": "Pastel or colored section",
+        "items": "Icon + short text label",
+        "spacing": "Generous gaps between features"
+      }
+    },
+    
+    "accessibility": {
+      "color_contrast": {
+        "primary_text": "21:1 (black on white)",
+        "ensure_wcag_aa": "All pastel backgrounds with black text should meet 4.5:1"
+      },
+      "interactive_elements": {
+        "minimum_touch_target": "44x44px",
+        "focus_indicators": "Visible, high contrast"
+      },
+      "semantic_html": "Use proper heading hierarchy, semantic tags"
+    },
+    
+    "implementation_guidelines": {
+      "css_approach": {
+        "methodology": "Component-based (BEM or CSS-in-JS)",
+        "responsive": "Mobile-first with breakpoints",
+        "animations": "CSS transitions for micro-interactions"
+      },
+      "component_composition": {
+        "atomic_design": "Atoms (buttons, icons) → Molecules (cards) → Organisms (hero, navigation) → Templates → Pages"
+      },
+      "spacing_system": {
+        "use": "Consistent spacing scale (8px base)",
+        "application": "margin, padding, gap using scale multiples"
+      },
+      "border_radius_scale": {
+        "small": "8px (cards, inputs)",
+        "medium": "16-24px (images, containers)",
+        "large": "32px (buttons, pills)",
+        "full": "50% (circular elements)"
+      }
+    },
+    
+    "variations_and_adaptations": {
+      "color_schemes": {
+        "primary": "White background with pastel accents",
+        "alternate": "Pastel background sections with white cards",
+        "dark_mode_note": "Not present in original, but would use dark gray (#1A1A1A) with same pastel accents"
+      },
+      "layout_variations": {
+        "single_column_mobile": "Stack all elements vertically",
+        "two_column_tablet": "Side-by-side for hero and features",
+        "multi_column_desktop": "Up to 3-4 columns for feature grids"
+      }
+    },
+    
+    "content_tone_and_copy": {
+      "voice": "Friendly, approachable, wellness-focused",
+      "headline_style": "Question-based or benefit statements",
+      "body_copy": "Short, scannable, benefit-focused",
+      "cta_copy": "Action-oriented, casual (e.g., 'Shop', 'Learn More', 'Get Started')"
+    },
+    
+    "imagery_guidelines": {
+      "photography_style": {
+        "subject": "Lifestyle, people in natural settings, product in use",
+        "lighting": "Natural, bright, warm tones",
+        "composition": "Dynamic, energetic, movement",
+        "color_grading": "Warm, slightly saturated, natural tones"
+      },
+      "illustration_style": {
+        "type": "Simple, flat graphics",
+        "examples": "Flowers, geometric shapes, icons",
+        "color": "Solid colors matching palette",
+        "usage": "Accents, decorative elements, not primary focus"
+      },
+      "icon_style": {
+        "type": "Line icons",
+        "weight": "2px stroke",
+        "style": "Rounded corners, simple, minimal",
+        "size": "24px standard, scalable"
+      }
+    },
+    
+    "animation_and_motion": {
+      "principles": "Subtle, purposeful, organic",
+      "durations": {
+        "micro": "150-200ms (hover states)",
+        "standard": "250-350ms (transitions)",
+        "emphasis": "400-600ms (page transitions)"
+      },
+      "easing": "ease, ease-in-out, or custom cubic-bezier",
+      "effects": [
+        "Fade in on scroll",
+        "Slight scale on hover",
+        "Opacity transitions",
+        "Smooth color transitions",
+        "Gentle floating/parallax for decorative elements"
+      ]
+    },
+    
+    "responsive_behavior": {
+      "mobile": {
+        "navigation": "Hamburger menu or simplified horizontal",
+        "hero": "Stack text above image",
+        "benefit_tags": "Vertical stack or 2-column grid",
+        "features": "Single column",
+        "images": "Full width with maintained aspect ratio"
+      },
+      "tablet": {
+        "navigation": "Full horizontal menu",
+        "hero": "Side-by-side or 60/40 split",
+        "benefit_tags": "2-3 column grid or organic layout",
+        "features": "2 column grid"
+      },
+      "desktop": {
+        "navigation": "Full horizontal with all items visible",
+        "hero": "50/50 or 55/45 split",
+        "benefit_tags": "Organic scattered layout",
+        "features": "Horizontal row or 3+ column grid"
+      }
+    },
+    
+    "use_cases_and_examples": {
+      "ideal_for": [
+        "Wellness and health products",
+        "Organic/natural product brands",
+        "Lifestyle e-commerce",
+        "Sustainable product lines",
+        "Modern DTC (Direct-to-Consumer) brands",
+        "Beauty and skincare",
+        "Supplement and vitamin brands"
+      ],
+      "component_combinations": {
+        "landing_page": "Navigation + Hero + Benefit Tags + Features + CTA",
+        "product_page": "Navigation + Product Hero + Benefit Tags + Details Grid + Reviews + CTA",
+        "about_page": "Navigation + Text Hero + Story Sections + Team Grid + Values Pills"
+      }
+    }
+  }
+}
